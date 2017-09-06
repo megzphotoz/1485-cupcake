@@ -16,7 +16,9 @@
 			<ul>
 				<li><a href="#home">Home</a></li>
 				<li><a href="#about">About</a></li>
-				<li><a href="#"><img src="img/icon-logo.png" alt="Real Authentic Fake"></a></li>
+				<li>
+					<h1><a href="#"><img src="img/icon-logo.png" alt="Real Authentic Fake"></a></h1>
+				</li>
 				<li><a href="#products">Products</a></li>
 				<li><a href="#contact-us">Contact Us</a></li>
 			</ul>
@@ -30,39 +32,64 @@
 	</div>
 </header>
 <!--BEGINNING OF WHITE SECTION WITH ABOUT & HOURS-->
-<section class="smooth-scroll" id="about">
-	<div class="wrapper">
-		<p>Specialty bakery dedicated to creating and baking several different sweet treats.</p>
+<div class="wrapper smooth-scroll" id="about">
+	<p>Specialty bakery dedicated to creating and baking several different sweet treats.</p>
+	<section>
 		<header>
 			<h2>About Us</h2>
 		</header>
 		<p>We offer cupcakes in three sizes: Jumbo Gourmet (filled), Regular &amp; Mini. Plus, we make Cakes, Cake Balls/Pops, Brownie Shots and several other sweet treats!</p>
-		<p>We are open 7 days a week, beginning Sunday at 11 am till 4 pm. Monday through Friday 8 am till 7 pm, and Saturday 10 am to 5 pm.</p>
+		<p>We are open 7 days a week, beginning Sunday at
+			<time datetime="11:00">11 am</time>
+			till
+			<time datetime="16:00"> 4 pm</time>
+			. Monday through Friday
+			<time datetime="08:00">8 am</time>
+			till
+			<time datetime="19:00"> 7 pm</time>
+			, and Saturday
+			<time datetime="10:00">10 am</time>
+			to
+			<time datetime="17:00">5 pm</time>
+			.</p>
 		<p>Stop in today for a treat or give us a call for an order!  We take special orders daily and provide delivery options. For pricing inquiries, please<a href="tel:+12125550123">(212)555-0123</a>give us a call.</p>
 		<!--DON'T FORGET HOVER STATE FOR GIVE US A CALL/LINK TO AN ACTUAL PHONE NUMBER-->
-		<div><a href="#contact-us" class="btn" id="lt-pink">Contact Us</a></div>
-		<!--DON'T FORGET HOVER STATE FOR CONTACT US BUTTON-->
-		
+		<p><a href="#contact-us" class="btn" id="lt-pink">Contact Us</a></p>
+		<!--DON'T FORGET HOVER STATE FOR CONTACT US BUTTON--> 
+	</section>
+	<section>
 		<header>
 			<h2>Hours</h2>
 		</header>
 		<ul>
-			<li>Monday&ndash;Friday<br>
-				<time datetime="T8:00-19:00">8:00 AM&ndash;7:00 PM</time>
-				<!--LOOK @ BOOK PG 91--GREENWHICH MEAN TIME--MAKE CST--place cherries through CSS--> 
+			<li>
+				<h3>Monday&ndash;Friday</h3>
+				<p>
+					<time datetime="08:00">8:00 <span>AM</span></time>
+					&ndash; <!--THROUGH CSS, MAKE SMALL CAPS WITHIN SPAN TAGS-->
+					<time datetime="19:00">7:00 <span>PM</span></time>
+				</p>
 			</li>
-			<li>Saturday<br>
-				<time datetime="T10:00-17:00"> 10:00 AM&ndash;5:00 PM</time>
+			<li>
+				<h3>Saturday</h3>
+				<p>
+					<time datetime="10:00"> 10:00 <span>AM</span></time>
+					&ndash;
+					<time datetime="17:00">5:00 <span>PM</span></time>
+				</p>
+			</li>
+			<li>
+				<h3>Sunday</h3>
+				<p>
+					<time datetime="11:00">11:00 <span>AM</span></time>
+					&ndash;
+					<time datetime="16:00">4:00 <span>PM</span></time>
+				</p>
 				<!--place cherries through CSS--> 
 			</li>
-			<li>Sunday<br>
-				<time datetime="T11:00-16:00">11:00 AM&ndash;4:00 PM</time>
-				<!--place cherries through CSS--> 
-			</li>
-			<!--PLEASE TELL ME THE CORRECT WAY, I HAVEN'T GOTTEN IT CORRECT ALL QUARTER, EEEK!-->
 		</ul>
-	</div>
-</section>
+	</section>
+</div>
 <!--BEGINNING OF PINK SECTION WITH OUR TREATS-->
 <section class="smooth-scroll" id="products" >
 	<div class="wrapper">
@@ -75,48 +102,48 @@
 				<header>
 					<h3>Signature Cucakes</h3>
 				</header>
-				<p>Caramels marshmallow jelly-o cotton candy ice cream I love cotton candy chocolate bar fruitcake.</p>
-				<a href="#">Order Now</a> </section>
+				<p>Caramels marshmallow jelly-o cotton candy ice cream I love cotton candy chocolate bar fruitcake. <a href="#">Order Now</a></p>
+			</section>
 			<section><!--place img through CSS-->
 				<header>
 					<h3>Allergen Free</h3>
 				</header>
-				<p>Topping pudding candy canes dragée. Lemon drops chupa chups gingerbread. Jelly topping apple pie cake pie icing chocolate bar fruitcake oat cake.</p>
-				<a href="#">Order Now</a> </section>
+				<p>Topping pudding candy canes dragée. Lemon drops chupa chups gingerbread. Jelly topping apple pie cake pie icing chocolate bar fruitcake oat cake. <a href="#">Order Now</a></p>
+			</section>
 			<section><!--place img through CSS-->
 				<header>
 					<h3>Vegan</h3>
 				</header>
-				<p>Pastry halvah gummi bears chupa chups I love. Macaroon pastry chocolate cake oat cake I love soufflé chocolate I love.</p>
-				<a href="#">Order Now</a></section>
+				<p>Pastry halvah gummi bears chupa chups I love. Macaroon pastry chocolate cake oat cake I love soufflé chocolate I love. <a href="#">Order Now</a></p>
+			</section>
 		</div>
 	</div>
 </section>
 <!--BEGINNING OF WHITE SECTION WITH DAILY FLAVORS-->
-<section class="wrapper.smooth-scroll">
+<section class="wrapper">
 	<header>
 		<h2>Daily Flavors</h2>
 	</header>
 	<div class="row">
-		<section>
+		<section class="col-1-4">
 			<header>
 				<h3>Wedding Cake</h3>
 			</header>
 			<p>White Cake frosted with white buttercream and topped with wedding day sprinkles and a rose ornament.</p>
 		</section>
-		<section>
+		<section class="col-1-4">
 			<header>
 				<h3>The Tuxed</h3>
 			</header>
 			<p> Chocolate Cake frosted with White buttercream, sprinkled with sprinkles.</p>
 		</section>
-		<section>
+		<section class="col-1-4">
 			<header>
 				<h3>Princess/Prince</h3>
 			</header>
 			<p>Almond flavored White Cake frosted with a pastel pink and pastel blue swirl vanilla buttercream, topped with colorful confetti sprinkles.</p>
 		</section>
-		<section>
+		<section class="col-1-4">
 			<header>
 				<h3>Go Big Red Velvet</h3>
 			</header>
@@ -124,25 +151,25 @@
 		</section>
 	</div>
 	<div class="row">
-		<section>
+		<section class="col-1-4">
 			<header>
 				<h3>Peanut Butter Cup</h3>
 			</header>
 			<p>Chocolate Cake frosted with peanut butter buttercream and topped with peanut butter cup crumbles.</p>
 		</section>
-		<section>
+		<section class="col-1-4">
 			<header>
 				<h3>Cookies &amp; Cream</h3>
 			</header>
 			<p>Chocolate Cake frosted with chocolate cookie crumb buttercream and topped with crumbed oreo crumbs.</p>
 		</section>
-		<section>
+		<section class="col-1-4">
 			<header>
 				<h3>Signature</h3>
 			</header>
 			<p>Chocolate Cake frosted with our favorite Cupcakes &amp; more colors, chocolate and hot pink swirled buttercream.</p>
 		</section>
-		<section>
+		<section class="col-1-4">
 			<header>
 				<h3>Chocolate Lovers</h3>
 			</header>
@@ -152,7 +179,7 @@
 </section>
 <!--BEGINNING OF PINK SECTION WITH PRICING-->
 <section class="bg-pink">
-	<div class="wrapper.smooth-scroll">
+	<div class="wrapper smooth-scroll">
 		<header>
 			<h2>Place Order</h2>
 		</header>
@@ -192,106 +219,124 @@
 	
 	<!--BEGINNING OF PINK SECTION WITH FORM-->
 	<form>
-		<div id="form-left">
-			<div class="row">
-				<label for="first-name">First Name</label>
-				<input type="text" name="First Name" id="first-name">
-				<label for="last-name">Last Name</label>
-				<input type="text" name="Last Name" id="last-name">
-				<label for="phone-number">Phone Number</label>
-				<input type="tel" name="Phone Number" id="phone-number">
-				<label for="email-address">Email Address</label>
-				<input type="email" name="Email Address" id="email-address">
-				<label for="special-requests">Special Requests</label>
-				<textarea id="special-requests"></textarea>
-			</div>
+		<div id="form-left" class="row">
+			<label for="first-name">First Name</label>
+			<input type="text" name="First Name" id="first-name">
+			<label for="last-name">Last Name</label>
+			<input type="text" name="Last Name" id="last-name">
+			<label for="phone-number">Phone Number</label>
+			<input type="tel" name="Phone Number" id="phone-number">
+			<label for="email-address">Email Address</label>
+			<input type="email" name="Email Address" id="email-address">
+			<label for="special-requests">Special Requests</label>
+			<textarea id="special-requests"></textarea>
 		</div>
-		<div id="form-right">
-			<div class="row">
-				<fieldset>
-					<legend>Occasion</legend>
-					<select name="occasion">
-						<option>Because It's Monday</option>
-						<option>Why Not?!</option>
-						<option>This Week Sucked</option>
-					</select>
-				</fieldset>
-				<fieldset>
-					<legend>Quantity</legend>
-					<label>Individual
+		<div id="form-right" class="row">
+			<fieldset>
+				<legend>Occasion</legend>
+				<select name="occasion">
+					<option>Because It's Monday</option>
+					<option>Why Not?!</option>
+					<option>This Week Sucked</option>
+				</select>
+			</fieldset>
+			<fieldset class="row">
+				<legend>Quantity</legend>
+				<div>
+					<label>
 						<input type="radio" name="Quantity" value="individual">
-					</label>
-					<label>One Dozen
+						Individual </label>
+				</div>
+				<div>
+					<label>
 						<input type="radio" name="Quantity" value="one-dozen">
-					</label>
-					<label>Two Dozen
+						One Dozen </label>
+				</div>
+				<div>
+					<label>
 						<input type="radio" name="Quantity" value="two-dozen">
-					</label>
-				</fieldset>
-				<fieldset>
-					<p>Flavor</p>
-					<div>
-						<label>Wedding Cake
-							<input type="checkbox" name="Flavor" value="wedding-cake">
-						</label>
-						<label>Go Big Red
-							<input type="checkbox" name="Flavor" value="go-big-red">
-						</label>
-						<label>Signature
-							<input type="radio" name="Type" value="signature">
-						</label>
-					</div>
-					<div>
-						<label>The Tuxed
-							<input type="checkbox" name="Flavor" value="the-tuxed">
-						</label>
-						<label>PB Cup
-							<input type="checkbox" name="Flavor" value="pb-cup">
-						</label>
-						<label>Chocolate Lovers
-							<input type="checkbox" name="Flavor" value="chocolate-lovers">
-						</label>
-					</div>
-					<div>
-						<label>Princess
-							<input type="checkbox" name="Flavor" value="princess">
-						</label>
-						<label>Cookies &amp; Cream
-							<input type="checkbox" name="Flavor" value="cookies-&amp;-cream">
-						</label>
-					</div>
-				</fieldset>
-				<fieldset>
-					<legend>Type</legend>
-					<label>Allergen Free
+						Two Dozen </label>
+				</div>
+			</fieldset>
+			<fieldset class="row">
+				<p>Flavor</p>
+				<div>
+					<label>
+						<input type="checkbox" name="Flavor" value="wedding-cake">
+						Wedding Cake </label>
+					<label>
+						<input type="checkbox" name="Flavor" value="go-big-red">
+						Go Big Red </label>
+					<label>
+						<input type="radio" name="Type" value="signature">
+						Signature </label>
+				</div>
+				<div>
+					<label>
+						<input type="checkbox" name="Flavor" value="the-tuxed">
+						The Tuxed </label>
+					<label>
+						<input type="checkbox" name="Flavor" value="pb-cup">
+						PB Cup </label>
+					<label>
+						<input type="checkbox" name="Flavor" value="chocolate-lovers">
+						Chocolate Lovers </label>
+				</div>
+				<div>
+					<label>
+						<input type="checkbox" name="Flavor" value="princess">
+						Princess </label>
+					<label>
+						<input type="checkbox" name="Flavor" value="cookies-&amp;-cream">
+						Cookies &amp; Cream </label>
+				</div>
+			</fieldset>
+			<fieldset class="row">
+				<legend>Type</legend>
+				<div>
+					<label>
+						<input type="radio" name="Type" value="signature">
+						Signature</label>
+				</div>
+				<div>
+					<label>
 						<input type="radio" name="Type" value="allergen-free">
-					</label>
-					<label>Vegan
+						Allergen Free </label>
+				</div>
+				<div>
+					<label>
 						<input type="radio" name="Type" value="vegan">
-					</label>
-				</fieldset>
-			</div>
+						Vegan </label>
+				</div>
+			</fieldset>
 			<p>Pay On Paypal</p>
 			<a href="#">Pay On Paypal</a></div>
 	</form>
 </section>
 <!--BEGINNING OF WHITE SECTION WITH FOOTER-->
 <footer>
-	<div class="smooth-scroll">
+	<div class="wrapper">
 		<div class="row">
-			<h4> Real Fake Authentic </h4>
-			<p>specialty bakery dedicated to creating and baking several different sweet treats.</p>
-			<h4>Our Location</h4>
-			<p>123 Fake Street #101</p>
-			<p>Fakersville, FA 12345</p>
-			<h4>Connect</h4>
-			<ul>
-				<li><a href="img/icon-fb.png" target="_blank"></a><span>Facebook</span></li>
-				<li><a href="img/icon-twitter.png" target="_blank"></a><span>Twitter</span></li>
-				<li><a href="img/icon-pinterest.png" target="_blank"></a><span>Pinterest</span></li>
-				<li><a href="img/icon-linkedin.png" target="_blank"></a><span>Linkedin</span></li>
-				<li><a href="img/icon-google.png" target="_blank"></a><span>Google</span></li>
-			</ul>
+			<section>
+				<h4> Real Fake Authentic </h4>
+				<p>specialty bakery dedicated to creating and baking several different sweet treats.</p>
+			</section>
+			<!--put other sections in around address & list-->
+			<section>
+				<h4>Our Location</h4>
+				<p>123 Fake Street #101</p>
+				<p>Fakersville, FA 12345</p>
+			</section>
+			<section>
+				<h4>Connect</h4>
+				<ul>
+					<li><a href="http://www.facebook.com" target="_blank"></a><span>Facebook</span></li>
+					<li><a href="http://www.twitter.com" target="_blank"></a><span>Twitter</span></li>
+					<li><a href="http://www.pinterest.com" target="_blank"></a><span>Pinterest</span></li>
+					<li><a href="http://www.linkedin.com" target="_blank"></a><span>Linkedin</span></li>
+					<li><a href="http://www.google.com" target="_blank"></a><span>Google</span></li>
+				</ul>
+			</section>
 		</div>
 	</div>
 </footer>
