@@ -39,6 +39,86 @@
 
 --------------------------------------------------------------*/
 /* 1.0 - Typography */
-h2 p, h2 ul, h3 p, table {
+#about section > p, #about h3, #about p:nth-child(3) {/* CANT TARGET TIME */
 	font-family: 'Alegreya', serif;
 }
+#about section > p, #about h3 {
+	font-size: 14px;
+	font-weight: 400;
+	color: #432920;
+}
+nav li {
+	font-size: 14px;
+	display: inline-block;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #432920; 
+}
+nav a {
+	padding: 20px 55px 40px 55px;/*CAN'T GET TO MOVE UP */
+	color: #432920;
+}
+nav a:hover {
+	color: #fdb3df;
+}
+nav a, #about p:first-child {/*SPECIALTY BAKERY DEDICATED...*/
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #432920;
+}
+ 
+#home p, #about h2 {
+	color: #fdb3df;
+	text-transform: uppercase;
+	
+}
+#about p:first-child {/*SPECIALTY BAKERY DEDICATED...*/
+	font-size: 34px;
+	text-align: center;
+	font-weight: 700;
+}
+#about h2 {
+	display: inline-block;
+	padding-left: 100px;
+}
+
+/* 3.1 - Site Structure */
+#home .bg-pink .wrapper {
+	background: url("../img/hero.jpg") no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	background-size: cover;
+	padding: 175px 0;
+}
+.wrapper {
+	width: 970px;
+	margin: 0 auto;	
+}
+.row {
+	overflow: auto;
+}
+.bg-pink  {
+	background-color: #fdb3df;/*VERY TOP PINK W/ HERO */
+	padding: 25px 60px 25px 60px;
+}
+#home p { /* TRY OUR SIGNATURE CUPCAKE */
+	background-color: #fdb3df;
+	background-color: rgba(253, 179, 223, 0.5);
+	height: 70px;
+	font-size: 34px;
+	font-weight: 700;
+	padding: 15px 50px;
+}
+#about .smooth-scroll .wrapper {/*NOT SHOWING UP*/
+	background: url("../img/display-cupcake.jpg") no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	background-size: cover;
+}
+
