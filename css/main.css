@@ -45,45 +45,44 @@
 #about section > p, #about h3 {
 	font-size: 14px;
 	font-weight: 400;
-	color: #432920;
 }
-nav li {
-	font-size: 14px;
-	display: inline-block;
-	list-style: none;
-}
-a {
-	text-decoration: none;
-	color: #432920; 
-}
-nav a {
-	padding: 20px 55px 40px 55px;/*CAN'T GET TO MOVE UP */
-	color: #432920;
-}
-nav a:hover {
-	color: #fdb3df;
-}
-nav a, #about p:first-child {/*SPECIALTY BAKERY DEDICATED...*/
-	text-transform: uppercase;
-	text-decoration: none;
-	color: #432920;
-}
- 
 #home p, #about h2 {
 	color: #fdb3df;
-	text-transform: uppercase;
-	
 }
 #about p:first-child {/*SPECIALTY BAKERY DEDICATED...*/
 	font-size: 34px;
 	text-align: center;
 	font-weight: 700;
 }
-#about h2 {
-	display: inline-block;
-	padding-left: 100px;
-}
 
+/* 2.1 - Main */
+a, nav a, #about p:first-child, #about section > p, #about h3 {
+	color: #432920;
+}
+nav a, #about p:first-child, #home p, #about h2 {
+	text-transform: uppercase;
+}
+nav li, #about h2 {
+	display: inline-block;
+}
+a {
+	text-decoration: none;
+}
+nav li {
+	vertical-align: middle;
+	padding: 0 70px;
+}
+nav a:hover {
+	color: #fdb3df;
+}
+nav a, #about p:first-child {/*SPECIALTY BAKERY DEDICATED...*/
+	text-decoration: none;
+}
+nav li {
+	font-size: 14px;
+	display: inline-block;
+	list-style: none;
+}
 /* 3.1 - Site Structure */
 #home .bg-pink .wrapper {
 	background: url("../img/hero.jpg") no-repeat center;
@@ -95,30 +94,20 @@ nav a, #about p:first-child {/*SPECIALTY BAKERY DEDICATED...*/
 	padding: 175px 0;
 }
 .wrapper {
-	width: 970px;
-	margin: 0 auto;	
+	width: 1170px;
+	margin: 0 auto;
 }
 .row {
 	overflow: auto;
 }
-.bg-pink  {
+.bg-pink {
 	background-color: #fdb3df;/*VERY TOP PINK W/ HERO */
-	padding: 25px 60px 25px 60px;
+	padding: 25px 60px;
 }
 #home p { /* TRY OUR SIGNATURE CUPCAKE */
-	background-color: #fdb3df;
 	background-color: rgba(253, 179, 223, 0.5);
-	height: 70px;
 	font-size: 34px;
 	font-weight: 700;
-	padding: 15px 50px;
+	padding: 10px 70px 10px 48px;/* CAN'T GET TRANSPARENCY TO SHORTEN IN WIDTH W/OUT USING EXCESSIVE MARGIN */
+	margin-right: 300px;
 }
-#about .smooth-scroll .wrapper {/*NOT SHOWING UP*/
-	background: url("../img/display-cupcake.jpg") no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	-ms-background-size: cover;
-	background-size: cover;
-}
-
