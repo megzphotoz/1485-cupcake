@@ -39,29 +39,42 @@
 
 --------------------------------------------------------------*/
 /* 1.0 - Typography */
-#about section > p, #about h3, #about p:nth-child(3) {/* CANT TARGET TIME */
+nav a, #about p:first-child, #home p, #about h2 {
+	text-transform: uppercase;
+}
+a, nav a, #about p:first-child, #about section > p, #about h3, p, time, #products h2 {
+	color: #432920;
+}
+#home p, #about h2, .col-1-4 h3 {
+	color: #fdb3df;
+}
+#about > p {
+	font-family: 'Nunito', sans-serif;
+}
+/* 1.6 - Tables */
+p, time, .bg-pink caption, .bg-pink section table tr, #about h3, #about p:nth-child(3), ul span {
 	font-family: 'Alegreya', serif;
 }
 #about section > p, #about h3 {
 	font-size: 14px;
 	font-weight: 400;
 }
-#home p, #about h2 {
-	color: #fdb3df;
-}
 #about p:first-child {/*SPECIALTY BAKERY DEDICATED...*/
 	font-size: 34px;
 	text-align: center;
 	font-weight: 700;
+	padding: 40px 94px;
 }
-
+/* 1.4 - Lists */
+ul span {
+	font-variant: small-caps;
+}
+ul {
+	list-style-image: url(../img/cherry.png);
+}
 /* 2.1 - Main */
-a, nav a, #about p:first-child, #about section > p, #about h3 {
-	color: #432920;
-}
-nav a, #about p:first-child, #home p, #about h2 {
-	text-transform: uppercase;
-}
+
+
 nav li, #about h2 {
 	display: inline-block;
 }
@@ -72,7 +85,7 @@ nav li {
 	vertical-align: middle;
 	padding: 0 70px;
 }
-nav a:hover {
+nav a:hover, #about h2 a:hover {/* HOW DO I TARGET 'PLEASE GIVE US A CALL' TO CHANGE THE HOVER STATE? */
 	color: #fdb3df;
 }
 nav a, #about p:first-child {/*SPECIALTY BAKERY DEDICATED...*/
@@ -83,6 +96,7 @@ nav li {
 	display: inline-block;
 	list-style: none;
 }
+
 /* 3.1 - Site Structure */
 #home .bg-pink .wrapper {
 	background: url("../img/hero.jpg") no-repeat center;
@@ -110,4 +124,36 @@ nav li {
 	font-weight: 700;
 	padding: 10px 70px 10px 48px;/* CAN'T GET TRANSPARENCY TO SHORTEN IN WIDTH W/OUT USING EXCESSIVE MARGIN */
 	margin-right: 300px;
+}
+
+#about h2 {
+	float: left;
+	margin: -3px 50px 10px 20px;
+}
+#about p:nth-child(3), #about p:nth-child(4), #about p:nth-child(5) {
+	line-height: 30px;
+	padding: 20px 374px 0 0;
+}
+#about p:nth-child(5) {
+	padding-left: 170px;
+}
+#about section h2 {
+	float: right;
+	margin: -301px 213px 231px -30px;
+}
+#about section ul {
+	float: right;
+	margin: -279px 164px 231px 0;
+}
+#about img {
+	float: left;
+	position: relative;
+	width: 170px;
+	height: 170px;
+}
+#about p:nth-child(4) a:hover { /*HOW DO I TARGET THE SECOND ANCHOR TAG WITHOUT PUTTING AN ID ON IT? */
+	color: #fdb3df;
+}
+#lt-pink {
+	float: left;
 }
