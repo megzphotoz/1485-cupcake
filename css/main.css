@@ -39,10 +39,10 @@
 
 --------------------------------------------------------------*/
 /* 1.0 - Typography */
-nav a, #about p:first-child, #home p, #about h2 {
+nav a, #about p:first-child, #home p, #about h2, #lt-pink, #products h2, #products h3, .order-now, #form h2 {
 	text-transform: uppercase;
 }
-a, nav a, #about p:first-child, #about section > p, #about h3, p, time, #products h2 {
+a, nav a, #about p:first-child, #about section > p, #about h3, p, time, #products h2, #form h2 {
 	color: #432920;
 }
 #home p, #about h2, .col-1-4 h3 {
@@ -51,7 +51,29 @@ a, nav a, #about p:first-child, #about section > p, #about h3, p, time, #product
 #about > p {
 	font-family: 'Nunito', sans-serif;
 }
-/* 1.6 - Tables */
+/* 1.1 - Headings */
+#about h2 {
+	margin-top: -5px;
+}
+#about h2, #products h2, #form h2 {
+	font-size: 34px;
+	font-weight: 800;
+}
+#products h3 {
+	color: #fff;
+	font-weight: 700;
+	font-size: 24px;
+}
+/* 1.2 - Body Copy */
+#about p, #products h2, #products p:first-child, #form h2, header > p, .treats h3, .treats > p {
+	text-align: center;
+}
+#about section p, header > p, .treats > p {
+	line-height: 30px;
+}
+header > p {
+	padding: 0 377px;
+}
 p, time, .bg-pink caption, .bg-pink section table tr, #about h3, #about p:nth-child(3), ul span {
 	font-family: 'Alegreya', serif;
 }
@@ -59,23 +81,71 @@ p, time, .bg-pink caption, .bg-pink section table tr, #about h3, #about p:nth-ch
 	font-size: 14px;
 	font-weight: 400;
 }
-#about p:first-child {/*SPECIALTY BAKERY DEDICATED...*/
+#about p:first-child {/*PARAGRAPHS UNDER ABOUT US & HRS & SPECIALTY BAKERY??...*/
 	font-size: 34px;
-	text-align: center;
 	font-weight: 700;
 	padding: 40px 94px;
+}
+#about {
+	padding-bottom: 80px;
+}
+/* 1.3 - Buttons */
+#lt-pink {
+	float: left;
+	background-color: #fdb3df;
+	color: #fff; /* WHY WHEN I PUT THIS UP IN ON LINE 58, IT DOESN'T WORK? */
+	padding: 10px 20px;
+	text-align: left;
+}
+.order-now {
+	background-color: #fff;
+	color: #fdb3df;
+	padding: 10px 20px;
+	margin-left: 40px;
+}
+#lt-pink:hover, .order-now:hover {
+	background-color: #e286c1;
+}
+.order-now:hover {
+	color: #fff;
 }
 /* 1.4 - Lists */
 ul span {
 	font-variant: small-caps;
 }
-ul {
+#about ul {
 	list-style-image: url(../img/cherry.png);
+}
+#about section:last-child {
+	float: right;
+	width: 245px;
+}
+/* 1.5 - Forms */
+label, input {
+	display: block;
+}
+fieldset {
+	border: none;
+	display: block;
+}
+form {
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	-o-column-count: 2;
+	-ms-column-count: 2;
+	column-count: 2;
+	padding: 120px;
+}
+legend {
+	display: none;
+}
+textarea, input {
+	width: 300px;
 }
 /* 2.1 - Main */
 
 
-nav li, #about h2 {
+nav li {
 	display: inline-block;
 }
 a {
@@ -96,8 +166,8 @@ nav li {
 	display: inline-block;
 	list-style: none;
 }
-
 /* 3.1 - Site Structure */
+
 #home .bg-pink .wrapper {
 	background: url("../img/hero.jpg") no-repeat center;
 	-webkit-background-size: cover;
@@ -107,6 +177,20 @@ nav li {
 	background-size: cover;
 	padding: 175px 0;
 }
+#about img {
+	float: left;
+	width: 170px;
+	height: 170px;
+}
+#products .bg-pink .wrapper { /* NEED TO FIGURE OUT HOW TO HAVE IMG SHOW */
+	background: url("../img/product-one.png") no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	background-size: cover;
+	padding: 50px 50px;
+}
 .wrapper {
 	width: 1170px;
 	margin: 0 auto;
@@ -114,46 +198,45 @@ nav li {
 .row {
 	overflow: auto;
 }
-.bg-pink {
-	background-color: #fdb3df;/*VERY TOP PINK W/ HERO */
+#products, .bg-pink {
+	background-color: #fdb3df;
+}
+#products {
+	padding: 60px 155px;
+}
+.bg-pink {/*VERY TOP PINK W/ HERO */
 	padding: 25px 60px;
 }
 #home p { /* TRY OUR SIGNATURE CUPCAKE */
 	background-color: rgba(253, 179, 223, 0.5);
 	font-size: 34px;
 	font-weight: 700;
-	padding: 10px 70px 10px 48px;/* CAN'T GET TRANSPARENCY TO SHORTEN IN WIDTH W/OUT USING EXCESSIVE MARGIN */
-	margin-right: 300px;
+	padding: 24px 187px 33px 35px;
+	display: inline-block;
 }
-
-#about h2 {
+#about section p {
+	text-align: left;
+}
+#about section:nth-child(2) {
+	width: 570px;
 	float: left;
-	margin: -3px 50px 10px 20px;
-}
-#about p:nth-child(3), #about p:nth-child(4), #about p:nth-child(5) {
-	line-height: 30px;
-	padding: 20px 374px 0 0;
-}
-#about p:nth-child(5) {
-	padding-left: 170px;
-}
-#about section h2 {
-	float: right;
-	margin: -301px 213px 231px -30px;
-}
-#about section ul {
-	float: right;
-	margin: -279px 164px 231px 0;
-}
-#about img {
-	float: left;
-	position: relative;
-	width: 170px;
-	height: 170px;
+	margin-left: 20px;
 }
 #about p:nth-child(4) a:hover { /*HOW DO I TARGET THE SECOND ANCHOR TAG WITHOUT PUTTING AN ID ON IT? */
 	color: #fdb3df;
 }
-#lt-pink {
+.treats div {
+	background-color: #fff;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	margin: 10px 70px;
+}
+.treats {
+	width: 280px;
 	float: left;
+	margin: 0 50px;
+}
+.treats:last-child {
+	float: right;
 }
