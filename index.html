@@ -10,8 +10,8 @@
 
 <body>
 <!--BEGINNING OF NAV-->
-<header id="home">
-	<nav class="smooth-scroll">
+<header id="home" class="smooth-scroll">
+	<nav>
 		<div class="wrapper">
 			<ul>
 				<li><a href="#home">Home</a></li>
@@ -34,7 +34,7 @@
 <!--BEGINNING OF WHITE SECTION WITH ABOUT & HOURS-->
 <div class="wrapper" id="about">
 	<p>Specialty bakery dedicated to creating and baking several different sweet treats.</p>
-	<div class="row"> <a href="#"><img src="img/display-cupcake.jpg" alt=""></a>
+	<div class="row"><img src="img/display-cupcake.jpg" alt="">
 		<section>
 			<header>
 				<h2>About Us</h2>
@@ -55,7 +55,7 @@
 				.</p>
 			<p>Stop in today for a treat or give us a call for an order!  We take special orders daily and provide delivery options. For pricing inquiries, please<a href="tel:+12125550123"> give us a call</a>.</p>
 			<!--HAVING A VERY DIFFICULT TIME TARGETING AND CHANGING COLOR FOR GIVE US A CALL-->
-			<p class="smooth-scroll"><a href="#contact-us" id="lt-pink">Contact Us</a></p>
+			<p class="smooth-scroll"><a href="#contact-us">Contact Us</a></p>
 		</section>
 		<section>
 			<header>
@@ -98,30 +98,31 @@
 			<p>We have something for every craving, celebration and occasion. We also offer several allergen free options.</p>
 		</header>
 		<div class="row">
-			<section class="treats"><!--place img through CSS-->
+			<section class="treats">
 				<div><!--bg to shape--></div>
 				<!--applying img, color, circle .treats:first-child div-->
 				<header>
 					<h3>Signature Cupcakes</h3>
 				</header>
 				<p>Caramels marshmallow jelly-o cotton candy ice cream I love cotton candy chocolate bar fruitcake.</p>
-				<p><a href="#order" class="order-now">Order Now</a></p>
+				<p class="smooth-scroll"><a href="#order-now">Order Now</a></p>
 			</section>
-			<section class="treats"><!--place img through CSS-->
+			<section class="treats">
 				<div></div>
 				<header>
 					<h3>Allergen Free</h3>
 				</header>
 				<p>Topping pudding candy canes dragée. Lemon drops chupa chups gingerbread. Jelly topping apple pie cake pie icing chocolate bar fruitcake oat cake.</p>
-				<p><a href="#order" class="order-now">Order Now</a></p>
+				<p class="smooth-scroll"><a href="#order-now">Order Now</a></p>
+				<!-- #products a--> 
 			</section>
-			<section class="treats"><!--place img through CSS-->
+			<section class="treats">
 				<div></div>
 				<header>
 					<h3>Vegan</h3>
 				</header>
 				<p>Pastry halvah gummi bears chupa chups I love. Macaroon pastry chocolate cake oat cake I love soufflé chocolate I love.</p>
-				<p><a href="#order" class="order-now">Order Now</a></p>
+				<p class="smooth-scroll"><a href="#order-now">Order Now</a></p>
 			</section>
 		</div>
 	</div>
@@ -185,8 +186,8 @@
 	</div>
 </section>
 <!--BEGINNING OF PINK SECTION WITH PRICING-->
-<section class="bg-pink" id="form">
-	<div class="wrapper smooth-scroll">
+<section class="bg-pink" id="contact-us">
+	<div class="wrapper">
 		<header>
 			<h2>Place Order</h2>
 			<p>Time limits for orders are 48 hours; please wait for a confirmation email to verify your order.</p>
@@ -225,27 +226,30 @@
 	</div>
 	
 	<!--BEGINNING OF PINK SECTION WITH FORM-->
-	<form class="row">
+	<form class="row" id="order-now">
 		<div class="col-1-2">
 			<label for="first-name">First Name</label>
-			<input type="text" name="First Name" id="first-name">
+			<input type="text" name="First Name" id="first-name" placeholder="First Name">
 			<label for="last-name">Last Name</label>
-			<input type="text" name="Last Name" id="last-name">
+			<input type="text" name="Last Name" id="last-name" placeholder="Last Name">
 			<label for="phone-number">Phone Number</label>
-			<input type="tel" name="Phone Number" id="phone-number">
+			<input type="tel" name="Phone Number" id="phone-number" placeholder="Phone Number">
 			<label for="email-address">Email Address</label>
-			<input type="email" name="Email Address" id="email-address">
+			<input type="email" name="Email Address" id="email-address" placeholder="Email Address">
 			<label for="special-requests">Special Requests</label>
-			<textarea id="special-requests" name="Special Requests"></textarea>
+			<textarea id="special-requests" name="special-requests" placeholder="Special Requests"></textarea>
 		</div>
 		<div class="col-1-2">
-			<fieldset>
+			<fieldset id="select">
 				<legend>Occasion</legend>
-				<select name="occasion">
-					<option>Because It's Monday</option>
-					<option>Why Not?!</option>
-					<option>This Week Sucked</option>
-				</select>
+				<p>Occasion</p>
+				<div>
+					<select>
+						<option>Because It's Monday</option>
+						<option>Why Not?!</option>
+						<option>This Week Sucked</option>
+					</select>
+					<span></span> </div>
 			</fieldset>
 			<fieldset class="row">
 				<legend>Quantity</legend>
@@ -316,7 +320,7 @@
 						Vegan </label>
 				</div>
 			</fieldset>
-			<p><a href="http://www.paypal.com" target="_blank"></a><span>Pay On Paypal</span></p>
+			<p><a href="http://www.paypal.com" target="_blank">Pay On Paypal</a></p>
 		</div>
 	</form>
 </section>
