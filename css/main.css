@@ -239,7 +239,7 @@ select:focus {
 	top: 0;
 	left: 0;
 }
-span {
+form span {
 	cursor: pointer;
 	width: 0;
 	height: 0;
@@ -401,6 +401,9 @@ p .smooth-scroll {
 	margin: 0;
 }
 /* 3.3	- Site Footer */
+footer span {
+	display: none;
+}
 footer section {
 	display: inline-block;
 	float: left;
@@ -419,7 +422,9 @@ footer ul a, footer li {
 footer ul a {
 	width: 20px;
 	height: 20px;
+	margin-right: 20px;
 }
+
 footer ul li:first-child a {
 	background: url(../img/icon-fb.png) no-repeat 0 0;
 }
@@ -438,8 +443,6 @@ footer ul li:last-child a {
 footer ul li a:hover {
 	background-position: 0 -26px /* 0 represents our horizontal value & -25 shifts it up */
 }
-
-
 
 
 
